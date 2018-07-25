@@ -1,0 +1,2 @@
+"0","ggplot(data=inspections, aes (x=score)) + "
+"0","  stat_density(aes(color=boro), geom=""line"",position=""identity"")"

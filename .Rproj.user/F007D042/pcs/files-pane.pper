@@ -1,0 +1,9 @@
+{
+    "path" : "~/Documents/NYC Data Sci/week 3/movie lens/Movies",
+    "sortOrder" : [
+        {
+            "ascending" : true,
+            "columnIndex" : 2
+        }
+    ]
+}
