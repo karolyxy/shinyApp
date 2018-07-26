@@ -5,9 +5,9 @@ account: karolyxy
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 387879
-bundleId: 1502140
+bundleId: 1502240
 url: https://karolyxy.shinyapps.io/Movies/
-when: 1532624186.60546
+when: 1532627904.00495
 asMultiple: FALSE
 asStatic: FALSE
 ignoredFiles: ml-latest-small/links.csv|ml-latest-small/tags.csv

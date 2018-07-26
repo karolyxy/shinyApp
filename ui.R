@@ -36,7 +36,7 @@ shinyUI(dashboardPage(
               fluidRow(
                 textInput("search_user", label = "Enter the userID (from 1 to 671): ", placeholder = "Enter the userID ...", value = 1), 
                 submitButton(text = "Submit", icon("refresh")),
-                box(plotOutput('genre_compare'), width = 12)
+                box(plotlyOutput('genre_compare'), width = 12)
               )
             )
       )

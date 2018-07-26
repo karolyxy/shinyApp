@@ -51,7 +51,7 @@ shinyServer(function(session, input, output){
       theme(legend.title = element_blank(), legend.position = "top") + theme(axis.text.x = element_blank())
   })
   
-  output$genre_compare <- renderPlot({
+  output$genre_compare <- renderPlotly({
     sep_user = mv_rat %>%
         select(., userId, title, rating, genres) %>%
         filter(., userId == input$search_user) 
@@ -63,9 +63,11 @@ shinyServer(function(session, input, output){
       filter(., genres != "") 
     
     #head(sep_clean)
-    sep_clean %>%
+    tmp = sep_clean %>%
       group_by(., genres) %>%
       ggplot(., aes(x = genres, y = rating)) + geom_boxplot() 
+    
+    ggplotly(tmp)
   })
   
 })
