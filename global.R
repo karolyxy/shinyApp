@@ -16,5 +16,6 @@ mv_rat <- movie_ratings %>%
 mv_rat$timestamp <- NULL
 
 
+
 #mv_with_rate <- write.csv(movie_ratings, file = "movie_ratings.csv")
   

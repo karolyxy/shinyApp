@@ -13,6 +13,7 @@ library(tidyr)
 library(dplyr)
 library(ggplot2)
 library(plotly)
+library(stringr)
 
 
 # Define server logic required to draw a histogram
@@ -50,6 +51,21 @@ shinyServer(function(session, input, output){
       theme(legend.title = element_blank(), legend.position = "top") + theme(axis.text.x = element_blank())
   })
   
-  output$value <- renderPrint({ input$search_user})
-  output$selectedGenre <- renderPrint({input$movie_genre})
+  output$genre_compare <- renderPlot({
+    sep_user = mv_rat %>%
+        select(., userId, title, rating, genres) %>%
+        filter(., userId == input$search_user) 
+    
+    sep_gen = separate_rows(sep_user, genres, convert = FALSE)
+  
+    sep_clean = sep_gen %>%
+      filter(., genres != 'c') %>%
+      filter(., genres != "") 
+    
+    #head(sep_clean)
+    sep_clean %>%
+      group_by(., genres) %>%
+      ggplot(., aes(x = genres, y = rating)) + geom_boxplot() 
+  })
+  
 })
