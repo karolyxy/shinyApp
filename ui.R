@@ -32,7 +32,21 @@ shinyUI(dashboardPage(
               )
         ),
               
-      tabItem(tabName = "users")
+      tabItem(tabName = "users",
+              fluidRow(
+                textInput("search_user", label = "Enter the userID (from 1 to 671): ", placeholder = "Enter the userID ..."), 
+                selectizeInput("movie_genre", label = "Choose genres of movies: ", 
+                               choices = c('Drama', 'Fantasy', 'Comedy', 'Documentary', 'Animation', 'Adventure', 
+                                           'Thriller', 'Western', 'War', 'Musical', 'Crime', 'Action', 'Mystery', 
+                                           'Romance', 'Sci-Fi', '(no genres listed)', 'Children', 'Film-Noir', 
+                                           'Horror', 'IMAX' )),
+                submitButton(text = "Submit", icon("refresh")),
+
+                verbatimTextOutput("value"),
+                verbatimTextOutput("selectedGenre"),
+                box(plotOutput("genre_pref"), width = 12)
+              )
+            )
       )
     )
   )

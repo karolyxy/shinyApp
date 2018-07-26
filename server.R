@@ -16,7 +16,7 @@ library(plotly)
 
 
 # Define server logic required to draw a histogram
-shinyServer(function(input, output){
+shinyServer(function(session, input, output){
   
   
   allRating <- reactive({
@@ -48,7 +48,8 @@ shinyServer(function(input, output){
       ggplot(., x = rating, aes(x = "", y = n, fill = factor(rating))) + geom_bar(width = 1, stat = "identity") +
       coord_polar("y") + labs(x = "", y = "", title = "") + theme(axis.ticks = element_blank()) + 
       theme(legend.title = element_blank(), legend.position = "top") + theme(axis.text.x = element_blank())
-      
   })
   
+  output$value <- renderPrint({ input$search_user})
+  output$selectedGenre <- renderPrint({input$movie_genre})
 })
