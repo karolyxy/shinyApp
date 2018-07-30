@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e3aadde7-6e2b-46a5-9b04-f863585d2707" name="Default" comment="" />
+    <list default="true" id="e3aadde7-6e2b-46a5-9b04-f863585d2707" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.RData" beforeDir="false" afterPath="$PROJECT_DIR$/.RData" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.Rhistory" beforeDir="false" afterPath="$PROJECT_DIR$/.Rhistory" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.Rproj.user/F007D042/pcs/workbench-pane.pper" beforeDir="false" afterPath="$PROJECT_DIR$/.Rproj.user/F007D042/pcs/workbench-pane.pper" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.Rproj.user/F007D042/sources/prop/7D680C70" beforeDir="false" afterPath="$PROJECT_DIR$/.Rproj.user/F007D042/sources/prop/7D680C70" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.Rproj.user/F007D042/sources/prop/BFFA70AC" beforeDir="false" afterPath="$PROJECT_DIR$/.Rproj.user/F007D042/sources/prop/BFFA70AC" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server.R" beforeDir="false" afterPath="$PROJECT_DIR$/server.R" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui.R" beforeDir="false" afterPath="$PROJECT_DIR$/ui.R" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,8 +22,8 @@
       <file leaf-file-name="readCSV.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/readCSV.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="37" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
+            <state relative-caret-position="315">
+              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -159,6 +167,16 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/readCSV.py">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="16" column="37" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/readCSV.py">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="10" column="10" lean-forward="true" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
           <folding>
@@ -176,8 +194,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/readCSV.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="37" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
+        <state relative-caret-position="315">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
